@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 import "../ERC677/ERC677.sol";
 
 contract BitStarters is ERC20, ERC677, ERC20Snapshot, Ownable, ERC20Permit, ERC20Votes {
-    constructor() ERC20("BitStarters", "BIST") ERC20Permit("BitStarters") {
+    constructor() ERC20("BitStarters", "BITS") ERC20Permit("BitStarters") {
         _mint(msg.sender, 100000000 * 10**decimals());
     }
 
